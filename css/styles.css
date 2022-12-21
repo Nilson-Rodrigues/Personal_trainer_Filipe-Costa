@@ -13,7 +13,7 @@ body {
 .inicio {
     width: 100%;
     height: 768px;
-    background-image: url(../img/img67.jpg);
+    background-image: url(../img/background.jpg);
     background-size: cover;
 }
 
@@ -28,7 +28,7 @@ body {
 
 .header-container .logo {
     width: 245px;
-    height: 80px;
+    height: 100px;
     border-radius: 10px;
 }
 
@@ -56,15 +56,15 @@ body {
     border-bottom: 2px solid #69F518;
 }
 
-.header-container .navbar-itens .btn {
+.btn {
     padding: 5px 20px;
     border-radius: 15px;
-    background: #69F518;
+    background: #50d807;
     font-weight: 600;
 }
 
-.header-container .navbar-itens .btn:hover {
-    background: #50d807;
+.btn:hover {
+    background: #4dc70c;
 }
 
 /*Conteudo da section Inicio*/
@@ -109,10 +109,16 @@ body {
     height: 300px;
 }
 
+.box-logo .btn {
+    display: none;
+}
+
 .box-logo img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
 }
 
 /*Section Especialidades*/
@@ -138,30 +144,8 @@ body {
 /*Mobile*/
 @media (max-width: 480px) {
 
-    /*Section Especialidades*/
-    .especialidades {
-        height: inherit;
-        background: #040404;
-
-    }
-
-    .especialidades ul {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .especialidades ul li {
-        list-style: none;
-        margin-bottom: 1rem;
-    }
-
     /*Section de inicio*/
     .inicio {
-        width: 100%;
-        height: 768px;
-        background-image: url(../img/back-mobile.png);
-        background-size: cover;
         padding-bottom: 200px;
     }
 
@@ -191,46 +175,53 @@ body {
     }
 
     .box-conteudo {
-        text-align: left;
         width: 90%;
         height: inherit;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
 
-        background: rgba(0, 0, 0, 0.3);
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-        border-radius: 8px
-
-    }
-
-    .box-conteudo-text {
-        margin-left: 20px;
-        line-height: 1;
-    }
-
-    .box-conteudo p {
-        font-weight: 500;
-        font-size: 24px;
-    }
-
-    .box-conteudo h1 {
-        font-weight: 900;
-        font-size: 48px;
-    }
-
-    .box-conteudo h2 {
-        font-weight: 900;
-        font-size: 24px;
     }
 
     .box-logo {
-        width: 300px;
-        height: 300px;
+        /*Alinhando o botão e a imagem*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box-logo .btn {
+        display: flex;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 1.3rem;
+        color: #fff;
+        
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
     }
 
     .box-logo img {
         width: 100%;
         height: 100%;
         border-radius: 50%;
+
+        margin-bottom: 50px;
+    }
+    
+    /*Section Especialidades*/
+    .especialidades {
+        height: inherit;
+        background: #040404;
+
+    }
+
+    .especialidades ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .especialidades ul li {
+        margin-bottom: 1rem;
     }
 
 }
