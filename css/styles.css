@@ -15,6 +15,8 @@ body {
     height: 768px;
     background-image: url(../img/background.jpg);
     background-size: cover;
+
+    padding-top: 8rem;
 }
 
 .header-container {
@@ -24,6 +26,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    position: fixed;
+    top: 0;
 }
 
 .header-container .logo {
@@ -123,9 +128,8 @@ body {
 
 /*Section Especialidades*/
 .especialidades {
-    margin-top: -20px;
+    padding: 20px 0px;
     width: 100%;
-    height: 250px;
     background: #040404;
 
 }
@@ -141,12 +145,92 @@ body {
     text-align: center;
 }
 
+/*Section Objetivos*/
+.objetivos {
+    background-image: url(../img/back_objetivos.jpeg);
+    background-size: cover;
+    padding: 20px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.objetivos-container {
+    width: 90%;
+    border: 2px solid #69F518;
+    padding: 0px 10px;
+    margin: 30px 0px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.objetivos-container h2 {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+}
+
+.objetivos-container p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/*Section Cards de feedbacks dos alunos*/
+.alunos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    background: #040404;
+
+    flex-wrap: wrap;
+}
+.alunos h2 {
+    font-weight: 900;
+    font-size: 30px;
+}
+.cards-feedback {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border: 2px solid #69F518;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.cards-feedback .perfil {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.cards-feedback .depoimento {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+}
+
+/*Footer*/
+footer {
+    border-top: 1px solid #69F518;
+    text-align: center;
+    padding: 50px;
+    background-color: #040404;
+}
+
 /*Mobile*/
 @media (max-width: 480px) {
 
     /*Section de inicio*/
     .inicio {
+        background-image: url(../img/background_mobile.jpeg);
+        background-size: cover;
         padding-bottom: 200px;
+        padding-top: 0;
     }
 
     .header-container {
@@ -154,7 +238,9 @@ body {
         width: 100%;
         display: flex;
         flex-direction: column;
-        border-radius: 0px 20px 20px;
+        border-radius: 0px 0px 20px 20px;
+
+        position: relative;
     }
 
     .header-container .navbar-itens ul li a {
@@ -189,16 +275,6 @@ body {
         flex-direction: column;
     }
 
-    .box-logo .btn {
-        display: flex;
-        text-decoration: none;
-        border-radius: 20px;
-        font-size: 1.3rem;
-        color: #fff;
-        
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-    }
-
     .box-logo img {
         width: 100%;
         height: 100%;
@@ -206,7 +282,18 @@ body {
 
         margin-bottom: 50px;
     }
-    
+
+    .box-logo .btn {
+        display: flex;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 1.3rem;
+        color: #fff;
+
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+        margin-bottom: 50px;
+    }
+
     /*Section Especialidades*/
     .especialidades {
         height: inherit;
@@ -224,4 +311,19 @@ body {
         margin-bottom: 1rem;
     }
 
+    /*Section Objetivos*/
+    .objetivos {
+        background-image: url(../img/back_objetivos_mobile2.jpeg);
+        background-size: cover;
+
+    }
+
+    /*Section Cards de feedbacks dos alunos*/
+
+.cards-feedback {
+
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+}
 }

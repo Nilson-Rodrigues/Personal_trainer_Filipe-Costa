@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="img/motivacao.png" type="image/x-icon">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Filipe Costa Personal Trainer</title>
 
 </head>
@@ -21,16 +22,16 @@
                 <nav class="navbar-itens">
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#">Dicas</a></li>
-                        <li><a href="#">Objetivos</a></li>
-                        <li><a href="#">Quem somos?</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#objetivos">Objetivos</a></li>
+                        <li><a href="#">Sobre</a></li>
                         <li><a id="contato" class="btn" href="https://wa.me/message/HYCNZPPTCVNIE1">Contato</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <div class="conteudo">
-            <div class="box-conteudo">
+            <div class="box-conteudo" data-aos="fade-left">
                 <div class="box-conteudo-text">
                     <p>Entre em forma com</p>
                     <h1>Filipe costa</h1>
@@ -38,32 +39,107 @@
                     <p>Treinamento personalizado e consultoria online</p>
                 </div>
             </div>
-            <div class="box-logo">
+            <div class="box-logo" data-aos="fade-right">
                 <img src="img/perfil.jpg" alt="Personal Trainer">
                 <a id="contato" class="btn" href="https://wa.me/message/HYCNZPPTCVNIE1">Contato</a>
             </div>
         </div>
     </section>
-    <section class="especialidades">
+    <section class="especialidades" id="servicos">
         <ul>
-            <li>
+            <li data-aos="fade-up">
                 <img src="img/motivacao.png" alt="Motivação">
                 <h2>Motivação</h2>
                 <p>Acompanhamento Profissional</p>
             </li>
-            <li>
+            <li data-aos="fade-up">
                 <img src="img/flexibilidade.png" alt="Flexibilidade">
                 <h2>Flexibilidade</h2>
                 <p>Treino compativel com seu tempo</p>
             </li>
-            <li>
-                <img src="img/personalizado.png" alt="Motivação">
+            <li data-aos="fade-up">
+                <img src="img/personalizado.png" alt="Treino Personalizado">
                 <h2>Treino Personalizado</h2>
                 <p>Treino certo pra você</p>
             </li>
-            
+
         </ul>
     </section>
+    <section class="objetivos" id="objetivos">
+        <div class="objetivos-container" data-aos="fade-up">
+            <h2>Objetivos</h2>
+            <p>Temos como objetivo ser um diferencial no ramo fitness.</p>
+            <p>Proporcionando ajuda a quem procura qualidade de vida, saúde e estética, com profissionalismo, ética,
+                humildade e total domínio sobre a área de atuação.</p>
+            <p>Os nossos serviços são prestados á todos os públicos, classes sociais, gêneros e faixa etária. Sempre
+                atendendo todos com muito carinho e atenção.</p>
+        </div>
+    </section>
+    <section class="alunos" id="Alunos">  
+        <h2>FeedBacks de Alunos</h2>
+
+        <div class="alunos">
+        <div class="cards-feedback" data-aos="fade-up">
+            <div>
+                <img class="perfil" src="./img/perfil_bruno.jpg" alt="Foto de perfil">
+            </div>
+            <h3>Bruno Costa</h3>
+            <div class="depoimento">
+                Filipe é um excelente Personal, sempre disposto a inovar e personalizar os treinos de acordo com
+                necessidade e a dificuldade do aluno. Comecei treinar com ele para ganhar massa muscular, após
+                perder uns 12kg, e com 3 hernias de disco, nossos treinos sempre tiveram a preocupação de fortalecer
+                a região do abdômen para sustentação da coluna, hoje consigo ter autonomia, fazer qualquer atividade
+                e inclusive dirigir 10 horas sem sentir dores.
+            </div>
+        </div>
+        <div class="cards-feedback" data-aos="fade-up">
+            <div>
+                <img class="perfil" src="./img/perfil_rafael.jpg" alt="Foto de perfil">
+            </div>
+            <h3>Rafael Aguiar</h3>
+            <div class="depoimento">
+                Procurei o Filipe em busca de um profissional que oferecesse qualidade de vida para seus alunos e sem
+                dúvida fui agraciado pelo seu método de exercício. Como praticante de basquete, meu desempenho em quadra
+                melhorou bastante com apenas 2 meses de treino. Ganhei força, resistência e aumento de massa magra com
+                os exercícios intensos do Rafael. Sem ele não haveria como alcançar uma meta agressiva que definimos no
+                início dos treinos. Valeu Rafael!!
+            </div>
+        </div>
+        <div class="cards-feedback" data-aos="fade-up">
+            <div>
+                <img class="perfil" src="./img/perfil_valentina.jpg" alt="Foto de perfil">
+            </div>
+            <h3>Valentina Ximenes</h3>
+            <div class="depoimento">
+                Comecei meus treinos com o Filipe pra melhorar o rendimento na musculação. E com ele eu tive novos
+                exercícios, intensidade nos treinos e principalmente trabalho adequado, ele montou algo exclusivo para
+                mim, sendo que os resultados apareceram logo de
+                imediato... Grande abraço meu amigo.
+            </div>
+        </div>
+        <div class="cards-feedback" data-aos="fade-up">
+            <div>
+                <img class="perfil" src="./img/perfil_taisa.jpg" alt="Foto de perfil">
+            </div>
+            <h3>Taisa Santos</h3>
+            <div class="depoimento">
+                O Rafael é um ótimo profissional de Educação física, as aulas são ótimas e muito dinâmicas. Isso me
+                ajudou muito, pois eu não gosto de treinos parados e repetitivos, com ele nunca foi assim.
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright © 2022 Filipe Costa | Criado Por Nilson Rodrigues</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
 </body>
 
 </html>
