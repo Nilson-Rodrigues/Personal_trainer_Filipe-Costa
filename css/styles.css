@@ -9,6 +9,15 @@ body {
     color: #fff;
 }
 
+/*Botão flutuante*/
+.btn-flutuante {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    text-decoration: none;
+
+}
+
 /*Section de inicio*/
 .inicio {
     width: 100%;
@@ -227,8 +236,7 @@ footer {
 
     /*Section de inicio*/
     .inicio {
-        background-image: url(../img/background_mobile.jpeg);
-        background-size: cover;
+
         padding-bottom: 200px;
         padding-top: 0;
     }
@@ -261,10 +269,9 @@ footer {
     }
 
     .box-conteudo {
-        width: 90%;
+        width: 95%;
+        margin: 20px 0px 100px 0px;
         height: inherit;
-        margin-bottom: 70px;
-
     }
 
     .box-logo {
@@ -283,16 +290,6 @@ footer {
         margin-bottom: 50px;
     }
 
-    .box-logo .btn {
-        display: flex;
-        text-decoration: none;
-        border-radius: 20px;
-        font-size: 1.3rem;
-        color: #fff;
-
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-        margin-bottom: 50px;
-    }
 
     /*Section Especialidades*/
     .especialidades {
@@ -321,7 +318,6 @@ footer {
     /*Section Cards de feedbacks dos alunos*/
 
 .cards-feedback {
-
     width: 300px;
     height: 400px;
     margin: 10px;
